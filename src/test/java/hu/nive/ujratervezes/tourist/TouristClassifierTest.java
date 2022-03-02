@@ -124,4 +124,13 @@ class TouristClassifierTest {
         System.out.println(namesPerMonth.size());
 
     }
+    
+    @Order(8)
+    @Test
+    void testFindBirthDaysInNextYear() {
+        Map<LocalDate, Long> birthdays = classifier.findBirthDaysInNextYear(now);
+        assertThat(birthdays).hasSize(9);
+        assertThat(birthdays.get(LocalDate.of(2022,2,8))).isEqualTo(3L);
+        assertThat(birthdays.get(LocalDate.of(2022,6,3))).isEqualTo(1L);
+    }
 }
