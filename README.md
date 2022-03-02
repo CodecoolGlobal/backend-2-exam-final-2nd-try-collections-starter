@@ -8,7 +8,7 @@ készítéshez.
 ## Feladatleírás
 
 Készíts egy, a teszteknek megfelelő `Tourist` osztályt, amiben tárolni tudod a következő adatokat:
-a turista nevét, születési dátumát és a hobbiait (String listában tárolva). Azt is meg tudja mondani, hogy egy adott
+a turista nevét, születési dátumát és a hobbiait (String halmazban tárolva). Azt is meg tudja mondani, hogy egy adott
 dátumkor épp hány éves: `int getAge(LocalDate now)`.
 
 Készíts el egy, a teszteknek megfelelő `TouristClassifier` osztályt, mely:
